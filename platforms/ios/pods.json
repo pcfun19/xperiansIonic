@@ -1,0 +1,21 @@
+{
+    "declarations": {},
+    "sources": {
+        "https://cdn.cocoapods.org/": {
+            "source": "https://cdn.cocoapods.org/",
+            "count": 1
+        }
+    },
+    "libraries": {
+        "Firebase/Core": {
+            "name": "Firebase/Core",
+            "spec": "~> 6.3.0",
+            "count": 1
+        },
+        "Firebase/Auth": {
+            "name": "Firebase/Auth",
+            "spec": "~> 6.3.0",
+            "count": 1
+        }
+    }
+}

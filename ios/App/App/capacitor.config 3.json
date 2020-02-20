@@ -1,0 +1,12 @@
+{
+  "appId": "com.xperians.app",
+  "appName": "ui",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {},
+  "server": {
+    "url": "http://172.16.0.168:8100",
+    "cleartext": true
+  }
+}
