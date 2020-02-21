@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { Home } from './home';
 import { Header } from "../templates/header/header.temp";
 import { Footer } from "../templates/footer/footer.temp";
+import { ExpandPostModal } from '../expandPostModal/ExpandPostModal';
 
 import {SwipeCardLibModule} from 'ng-swipe-card';
 import {SW_SWIPE_CARD_DEFAULT_OPTIONS} from 'ng-swipe-card';
@@ -28,7 +29,7 @@ import {SW_SWIPE_CARD_DEFAULT_OPTIONS} from 'ng-swipe-card';
     provide: SW_SWIPE_CARD_DEFAULT_OPTIONS,
     useValue: {likeColor: '255,255,255', dislikeColor: '255,255,255'},
   }],
-  entryComponents: [Header, Footer],
-  declarations: [Home, Header, Footer]
+  entryComponents: [Header, Footer, ExpandPostModal],
+  declarations: [Home, Header, Footer, ExpandPostModal]
 })
 export class HomeModule {}

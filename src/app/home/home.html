@@ -10,9 +10,14 @@
         <ion-avatar slot="start">
           <img src="https://www.w3schools.com/howto/img_avatar2.png">
         </ion-avatar>
-        <ion-label>Item Avatar</ion-label>
+        <ion-label>
+          <h2>Gollum</h2>
+          <p>Sneaky little hobbitses!</p>
+        </ion-label>
         <ion-button color="medium" fill="clear"  style="float: right;" size="default"><ion-icon name="person-add-outline"></ion-icon></ion-button>
-      </ion-item>       
+      </ion-item>
+      
+      
       <img class="containerImg" [src]="data.image" />
 
       <ion-footer>
@@ -22,35 +27,57 @@
           <ion-button fill="clear" size="default" color="medium"> <ion-icon name="chatbubbles-outline"></ion-icon>  </ion-button> 
           <ion-button fill="clear" size="default" color="medium"> <ion-icon name="paper-plane-outline"></ion-icon></ion-button> 
         </ion-col>
-        <ion-col align-self-end	class="ion-text-right ion-no-padding"> <ion-button color="medium" fill="clear" size="default"> <ion-icon name="information-circle-outline"></ion-icon></ion-button>  </ion-col>
+        <ion-col align-self-end	class="ion-text-right ion-no-padding"> <ion-button color="medium" fill="clear" size="default" (click)="expandPost()"> <ion-icon name="information-circle-outline"></ion-icon></ion-button>  </ion-col>
       </ion-row>   
       </ion-footer>    
     </ion-card>    
 
   </sw-card-wrapper>
 
+    
+      <ion-card>
+        <ion-item lines="none" >
+          <ion-avatar slot="start">
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+          <ion-label>Item Avatar</ion-label>
+          <ion-button color="medium" fill="clear"  style="float: right;" size="default"><ion-icon name="person-add-outline"></ion-icon></ion-button>
+        </ion-item>       
+        <img class="containerImg" src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />  
+      </ion-card>    
 
-    <ion-card class="container">
-      <ion-item lines="none" >
-        <ion-avatar slot="start">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-avatar>
-        <ion-label>Item Avatar</ion-label>
-        <ion-button color="medium" fill="clear"  style="float: right;" size="default"><ion-icon name="person-add-outline"></ion-icon></ion-button>
-      </ion-item>       
-      <img class="containerImg" src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />
+      <ion-card>
+        <ion-item lines="none" >
+          <ion-avatar slot="start">
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+          <ion-label>Item Avatar</ion-label>
+          <ion-button color="medium" fill="clear"  style="float: right;" size="default"><ion-icon name="person-add-outline"></ion-icon></ion-button>
+        </ion-item>       
+        <img class="containerImg" src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />  
+      </ion-card>    
+      <ion-card>
+        <ion-item lines="none" >
+          <ion-avatar slot="start">
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+          <ion-label>Item Avatar</ion-label>
+          <ion-button color="medium" fill="clear"  style="float: right;" size="default"><ion-icon name="person-add-outline"></ion-icon></ion-button>
+        </ion-item>       
+        <img class="containerImg" src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />  
+      </ion-card>    
+      <ion-card>
+        <ion-item lines="none" >
+          <ion-avatar slot="start">
+            <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+          </ion-avatar>
+          <ion-label>Item Avatar</ion-label>
+          <ion-button color="medium" fill="clear"  style="float: right;" size="default"><ion-icon name="person-add-outline"></ion-icon></ion-button>
+        </ion-item>       
+        <img class="containerImg" src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />  
+      </ion-card>    
 
-      <ion-footer>
-        
-      <ion-row>
-        <ion-col  class="ion-text-left ion-no-padding"> 
-          <ion-button fill="clear" size="default" color="medium"> <ion-icon name="chatbubbles-outline"></ion-icon>  </ion-button> 
-          <ion-button fill="clear" size="default" color="medium"> <ion-icon name="paper-plane-outline"></ion-icon></ion-button> 
-        </ion-col>
-        <ion-col align-self-end	class="ion-text-right ion-no-padding"> <ion-button color="medium" fill="clear" size="default"> <ion-icon name="information-circle-outline"></ion-icon></ion-button>  </ion-col>
-      </ion-row>   
-      </ion-footer>    
-    </ion-card>    
+
 
 </ion-content>
 

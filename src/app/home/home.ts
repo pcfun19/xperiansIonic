@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ElementRef, OnInit, ViewChild} from '@angular/core';
-import { Platform } from '@ionic/angular';
+import { Platform, ModalController } from '@ionic/angular';
+import { ExpandPostModal } from '../expandPostModal/ExpandPostModal';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +11,15 @@ import { Platform } from '@ionic/angular';
 export class Home  {
 
   data = [];
-  constructor(private el:ElementRef, public platform: Platform) {
+  modal = null;
+
+  constructor(private el:ElementRef, public platform: Platform, public modalController: ModalController) {
   }
 
   ngOnInit (){
 
-    this.data['image'] = 'https://ionicframework.com/docs/demos/api/card/madison.jpg';
-    this.data['description'] = 'testing';
+    this.data['image']        = 'https://ionicframework.com/docs/demos/api/card/madison.jpg';
+    this.data['description']  = 'testing';
   }
 
   swiperight () {
@@ -56,5 +59,16 @@ export class Home  {
     ); 
   }
 
+  async expandPost() {
+    const modal = await this.modalController.create({
+      component: ExpandPostModal,
+      componentProps: {
+        'image': this.data['image'],
+        'description': this.data['description'],
+      }
+    });
+    return await modal.present();
+
+  }
 
 }

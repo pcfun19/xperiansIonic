@@ -1,0 +1,37 @@
+
+          
+<ion-header  style="background-color: white; margin: none;">
+    <ion-toolbar>
+        <ion-item lines="none" >
+            <ion-avatar slot="start">
+              <img src="https://www.w3schools.com/howto/img_avatar2.png"/>
+            </ion-avatar>
+            <ion-label>
+              <h2>Gollum</h2>
+              <p>Sneaky little hobbitses!</p>
+            </ion-label>
+          </ion-item>
+      <ion-buttons slot="end">
+        <ion-button color="medium" fill="clear" size="large"><ion-icon name="person-add-outline"></ion-icon></ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <img [src]="data.image"/>
+    <ion-row>
+        <ion-col  class="ion-text-left ion-no-padding"> 
+          <ion-button fill="clear" size="default" color="medium"> <ion-icon name="chatbubbles-outline"></ion-icon>  </ion-button> 
+          <ion-button fill="clear" size="default" color="medium"> <ion-icon name="paper-plane-outline"></ion-icon></ion-button> 
+        </ion-col>
+        <ion-col align-self-end	class="ion-text-right ion-no-padding"> <ion-button color="medium" fill="clear" size="default" (click)="dismissModal()"> <ion-icon name="close-circle-outline"></ion-icon></ion-button>  </ion-col>
+      </ion-row>   
+</ion-header>
+
+<ion-content fullscreen class="ion-padding-horizontal ion-padding-bottom">
+    
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+</ion-content>
